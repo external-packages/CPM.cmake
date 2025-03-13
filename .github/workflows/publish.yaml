@@ -26,7 +26,7 @@ jobs:
         run: echo TAR_GZ_SHA256SUM=$(curl -sL "${{ github.server_url }}/${{ github.repository }}/archive/refs/tags/${{ github.ref_name }}.tar.gz" | shasum -a 256 | cut -d " " -f 1) >> $GITHUB_ENV
       
       - name: Upload CPM.cmake to release
-        uses: svenstaro/upload-release-action@v1-release
+        uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ github.ref }}
