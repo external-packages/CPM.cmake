@@ -56,26 +56,26 @@ jobs:
           file_glob: true
           overwrite: true
           body: |
-            "${{ github.server_url }}/${{ github.repository }}/archive/refs/tags/${{ github.ref_name }}.zip :
-            MD5: ${{ env.ZIP_MD5 }}
-            SHA1: ${{ env.ZIP_SHA1 }}
-            SHA224: ${{ env.ZIP_SHA224 }}
-            SHA256: ${{ env.ZIP_SHA256 }}
-            SHA384: ${{ env.ZIP_SHA384 }}
-            SHA512: ${{ env.ZIP_SHA512 }}
-            SHA3-224: ${{ env.ZIP_SHA3_224 }}
-            SHA3-256: ${{ env.ZIP_SHA3_256 }}
-            SHA3-384: ${{ env.ZIP_SHA3_384 }}
-            SHA3-512: ${{ env.ZIP_SHA3_512 }}
+            ${{ github.server_url }}/${{ github.repository }}/archive/refs/tags/${{ github.ref_name }}.zip :
+            MD5: `${{ env.ZIP_MD5 }}`
+            SHA1: `${{ env.ZIP_SHA1 }}`
+            SHA224: `${{ env.ZIP_SHA224 }}`
+            SHA256: `${{ env.ZIP_SHA256 }}`
+            SHA384: `${{ env.ZIP_SHA384 }}`
+            SHA512: `${{ env.ZIP_SHA512 }}`
+            SHA3-224: `${{ env.ZIP_SHA3_224 }}`
+            SHA3-256: `${{ env.ZIP_SHA3_256 }}`
+            SHA3-384: `${{ env.ZIP_SHA3_384 }}`
+            SHA3-512: `${{ env.ZIP_SHA3_512 }}`
             ${{ github.server_url }}/${{ github.repository }}/archive/refs/tags/${{ github.ref_name }}.tar.gz :
-            MD5: ${{ env.TAR_GZ_MD5 }}
-            SHA1: ${{ env.TAR_GZ_SHA1 }}
-            SHA224: ${{ env.TAR_GZ_SHA224 }}
-            SHA256: ${{ env.TAR_GZ_SHA256 }}
-            SHA384: ${{ env.TAR_GZ_SHA384 }}
-            SHA512: ${{ env.TAR_GZ_SHA512 }}
-            SHA3-224: ${{ env.TAR_GZ_SHA3_224 }}
-            SHA3-256: ${{ env.TAR_GZ_SHA3_256 }}
-            SHA3-384: ${{ env.TAR_GZ_SHA3_384 }}
-            SHA3-512: ${{ env.TAR_GZ_SHA3_512 }}
-            "
+            MD5: `${{ env.TAR_GZ_MD5 }}`
+            SHA1: `${{ env.TAR_GZ_SHA1 }}`
+            SHA224: `${{ env.TAR_GZ_SHA224 }}`
+            SHA256: `${{ env.TAR_GZ_SHA256 }}`
+            SHA384: `${{ env.TAR_GZ_SHA384 }}`
+            SHA512: `${{ env.TAR_GZ_SHA512 }}`
+            SHA3-224: `${{ env.TAR_GZ_SHA3_224 }}`
+            SHA3-256: `${{ env.TAR_GZ_SHA3_256 }}`
+            SHA3-384: `${{ env.TAR_GZ_SHA3_384 }}`
+            SHA3-512: `${{ env.TAR_GZ_SHA3_512 }}`
+            
